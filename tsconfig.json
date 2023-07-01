@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
     },
@@ -8,16 +9,18 @@
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
-
-    "moduleResolution": "node",
-
+    "esModuleInterop": false,
+    // "moduleResolution": "Node",
     /* Bundler mode */
-    // "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
+    "moduleResolution": "bundler",
+    "allowJs": false,    
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
+    "types": ["vite/client"], // added to resolved types
 
     /* Linting */
     "strict": true,
@@ -25,6 +28,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"],
+  "include": [".eslintrc.cjs", "src", "vite.config.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
