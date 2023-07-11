@@ -8,3 +8,5 @@ Since this is a code-along, I'm using the provided graphics, etc. I might go bac
 
 ## Issues
 - smooth-scroll. Look at implementing with tailwind
+
+- not seeing the sponsor section on lg screen
