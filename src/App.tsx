@@ -3,9 +3,9 @@ import { SelectedPage } from "@/shared/types";
 import Home from "@/scenes/home";
 import Benefits from "@/scenes/benefits";
 import Navbar from "@/scenes/navbar";
-import OurClasses from "./scenes/ourClasses";
-import Contact from "./scenes/contact";
-import Footer from "./scenes/footer";
+import OurClasses from "@/scenes/ourClasses";
+import Contact from "@/scenes/contact";
+import Footer from "@/scenes/footer";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(

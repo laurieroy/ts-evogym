@@ -22,7 +22,7 @@ const Footer = ({ setSelectedPage }: Props) => {
           <h4 className="font-bold capitalize">links</h4>
           <p className="my-5">Lorem ipsum dolor sit</p>
           <p className="my-5">amet consectetur adipisicing elit.</p>
-          <p className="">Aut molestias provident reprehenderit soluta</p>
+          <p>Aut molestias provident reprehenderit soluta</p>
         </div>
         <div className="mt-16 basis-1/4 md:mt-0">
           <h4 className="font-bold capitalize">contact us</h4>

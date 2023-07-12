@@ -1,3 +1,6 @@
+import AnchorLink from "react-anchor-link-smooth-scroll";
+import { motion } from "framer-motion";
+
 import { SelectedPage } from "@/shared/types";
 import HomePageText from "@/assets/HomePageText.png";
 import HomePageGraphic from "@/assets/HomePageGraphic.png";
@@ -6,14 +9,13 @@ import SponsorFortune from "@/assets/SponsorFortune.png";
 import SponsorRedBull from "@/assets/SponsorRedBull.png";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import ActionButton from "@/shared/ActionButton";
-import AnchorLink from "react-anchor-link-smooth-scroll";
-import { motion } from "framer-motion";
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
+
 const Home = ({ setSelectedPage }: Props) => {
-  const isAboveMediumScreens = useMediaQuery("(mind-width:1060px)");
+  const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
 
   return (
     <section id="home" className="gap-16 bg-gray-20 py-10 md:h-full md:pb-0">
@@ -43,7 +45,7 @@ const Home = ({ setSelectedPage }: Props) => {
             </div>
             <p className="mt-8 text-sm">
               Unrivaled Gym. Unparalleled Training Fitness Classes. World Class
-              Studios to get the Body Shapes That you Dream of.. Get Your Dream
+              Studios to get the Body Shape That you Dream of.. Get Your Dream
               Body Now.
             </p>
           </motion.div>
@@ -68,7 +70,7 @@ const Home = ({ setSelectedPage }: Props) => {
               onClick={() => setSelectedPage(SelectedPage.ContactUs)}
               href={`#${SelectedPage.ContactUs}`}
             >
-              <p className="">Learn More</p>
+              <p>Learn More</p>
             </AnchorLink>
           </motion.div>
         </div>
